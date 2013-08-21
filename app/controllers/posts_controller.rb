@@ -19,3 +19,6 @@ def show
   @post = Post.find(params[:id])
 end
 end
+def index
+  @posts = Post.all
+end
