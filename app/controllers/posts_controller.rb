@@ -2,7 +2,6 @@ class PostsController < ApplicationController
   def new
   end
 
- def create
    def create
     @post = Post.new(params[:post].permit(:title, :text))
 
